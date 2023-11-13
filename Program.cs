@@ -48,7 +48,10 @@
                 {
                     break;
                 }
-                // NYI: respons på felaktigt kommando
+                else
+                {
+                    Console.WriteLine($"Unknown command: '{command}'");
+                }
             } while (command != "quit");
             Console.WriteLine("Bye!");
         }
